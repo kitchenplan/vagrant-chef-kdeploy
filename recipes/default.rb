@@ -1,8 +1,9 @@
-include_recipe "kdeploy-hosting::update"
-include_recipe "kdeploy-hosting::ssh"
+include_recipe "kdeploy::update"
+include_recipe "kdeploy::ssh"
 include_recipe 'git'
-include_recipe "kdeploy-hosting::mysql"
-include_recipe "kdeploy-hosting::apache"
-include_recipe "kdeploy-hosting::php"
+include_recipe "kdeploy::mysql"
+include_recipe "kdeploy::postgresql"
+include_recipe "kdeploy::apache"
+include_recipe "kdeploy::php"
 include_recipe 'java'
-include_recipe "kdeploy-hosting::kdeploy"
+include_recipe "kdeploy::kdeploy"

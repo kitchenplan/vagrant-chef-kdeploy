@@ -42,5 +42,9 @@ package "libapache2-mod-fastcgi" do
     notifies :restart, "service[apache2]"
 end
 
+package "libapache2-mod-jk" do
+    notifies :restart, "service[apache2]"
+end
+
 apache_module "actions"
 apache_module "fastcgi"
