@@ -8,3 +8,4 @@ include_recipe "kdeploy::php"
 include_recipe 'java'
 include_recipe "kdeploy::kdeploy"
 include_recipe "kdeploy::support"
+include_recipe "kdeploy::cleanup"
