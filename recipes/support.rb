@@ -1,0 +1,8 @@
+package "ntp"
+package "optipng"
+package "jpegoptim"
+package "curl"
+package "htop"
+package "ffmpeg2theora"
+package "spamassassin"
+package "jhead"

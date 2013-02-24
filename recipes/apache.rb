@@ -46,5 +46,12 @@ package "libapache2-mod-jk" do
     notifies :restart, "service[apache2]"
 end
 
+template "/etc/apache2/mods-enabled/jk.conf" do
+    source "jk.conf"
+    owner "root"
+    mode "0755"
+    notifies :restart, "service[apache2]"
+end
+
 apache_module "actions"
 apache_module "fastcgi"

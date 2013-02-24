@@ -7,3 +7,4 @@ include_recipe "kdeploy::apache"
 include_recipe "kdeploy::php"
 include_recipe 'java'
 include_recipe "kdeploy::kdeploy"
+include_recipe "kdeploy::support"

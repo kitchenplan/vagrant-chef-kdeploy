@@ -48,3 +48,7 @@ directory "/usr/logs" do
   action :create
   recursive true
 end
+
+package "kdeploy-support" do
+  options '-o Dpkg::Options::="--force-overwrite"'
+end
