@@ -53,5 +53,12 @@ template "/etc/apache2/mods-enabled/jk.conf" do
     notifies :restart, "service[apache2]"
 end
 
+file "/etc/apache2/workers.properties" do
+  touch true
+  owner "root"
+  mode 0777
+  action :create
+end
+
 apache_module "actions"
 apache_module "fastcgi"
