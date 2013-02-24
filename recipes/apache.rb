@@ -54,10 +54,9 @@ template "/etc/apache2/mods-enabled/jk.conf" do
 end
 
 file "/etc/apache2/workers.properties" do
-  touch true
   owner "root"
   mode 0777
-  action :create
+  action :touch
 end
 
 apache_module "actions"
